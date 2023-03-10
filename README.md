@@ -1,7 +1,7 @@
 # operational-ml-microservice
 This project will operationalize a Machine Learning microservice using Kubernetes
 
-In this project, I:
+In this project, I
     Tested my code using linting
     Completed a Dockerfile to containerize my application
     Deployed the containerized application using Docker and made a prediction

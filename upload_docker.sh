@@ -12,7 +12,7 @@ dockerpath="ecoden/sklearn-ml-api"
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login
-docker tag $dockerpath:v1.0 $dockerpath:latest
+docker tag $dockerpath $dockerpath:latest
 
 # Step 3:
 # Push image to a docker repository

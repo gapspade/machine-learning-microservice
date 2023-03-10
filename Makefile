@@ -14,7 +14,7 @@ setup:
 install:
 	# Run from a venv
 	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+		pip install -r requirements-1.txt
 
 test:
 	# Additional, optional, tests could go here

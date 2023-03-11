@@ -1,3 +1,5 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/gapspade/machine-learning-microservice/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/gapspade/machine-learning-microservice/tree/main)
+
 # operational-ml-microservice
 This project will operationalize a Machine Learning microservice using Kubernetes
 

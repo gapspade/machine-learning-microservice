@@ -7,8 +7,8 @@
 
 setup:
 	# Create python virtualenv & source it
-	python3 -m venv ~/.udevops4
-	# source ~/.devops/bin/activate
+	python3 -m venv ~/.devops
+	source ~/.devops/bin/activate
 
 
 install:
@@ -23,9 +23,9 @@ test:
 
 lint:
 	# This is linter for Dockerfiles
-	hadolint Dockerfile
+	hadolint machine-learning-microservice/Dockerfile
 	# This should be run from inside a venv
-	pylint --disable=R,C,W1202,W1203,W1309 app.py
+	pylint --disable=R,C,W1202,W1203,W1309 machine-learning-microservice/app.py
 
 all: install lint test
 

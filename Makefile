@@ -23,9 +23,9 @@ test:
 
 lint:
 	# This is linter for Dockerfiles
-	hadolint machine-learning-microservice/Dockerfile
+	hadolint Dockerfile
 	# This should be run from inside a venv
-	pylint --disable=R,C,W1202,W1203,W1309 machine-learning-microservice/app.py
+	pylint --disable=R,C,W1202,W1203,W1309 app.py
 
 all: install lint test
 

@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: sklearn-ml-api
+  name: udacity-machine-learning-microservice
 spec:
   containers:
-    - image: ecoden/sklearn-ml-api:latest
-      name: sklearn
+    - image: gapspade/udacity-machine-learning-microservice
+      name: machine-learning-ms
       imagePullPolicy: Always
       resources:
         requests:
@@ -15,7 +15,7 @@ spec:
           memory: "1024Mi"
           cpu: "500m"
       command:
-        ["sh", "-c", 'echo "Creating sklearn-ml-api pod ..." && sleep 3600']
+        ["sh", "-c", 'echo "Creating udacity-machine-learning-microservice ..." && sleep 3600']
       ports:
         - containerPort: 80
   restartPolicy: Always

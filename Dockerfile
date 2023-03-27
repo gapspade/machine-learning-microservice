@@ -1,4 +1,4 @@
-FROM python:3.7.3-stretch
+FROM python:3.7-stretch
 
 ## Step 1:
 # Create a working directory
@@ -20,4 +20,4 @@ EXPOSE 80
 
 ## Step 5:
 # Run app.py at container launch
-CMD [ "python", "-u", "app.py" ]
+CMD ["python", "app.py"]

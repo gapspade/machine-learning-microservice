@@ -4,11 +4,11 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath="ecoden/sklearn-ml-api"
+dockerpath="gapspade/udacity-machine-learning-microservice"
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run sklearn-pod --image=$dockerpath:latest --port=80
+kubectl run udacity-machine-learning-microservice --image=$dockerpath:latest --port=80
 
 # Step 3:
 # List kubernetes pods
@@ -16,4 +16,4 @@ kubectl get pod
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward sklearn-pod 8000:80
+kubectl port-forward udacity-machine-learning-microservice 8000:80

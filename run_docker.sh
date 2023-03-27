@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build -t ecoden/sklearn-ml-api .
+docker build --tag=gapspade/udacity-machine-learning-microservice .
 
 # Step 2:
 # List docker images
@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3:
 # Run flask app
-docker run -p 8000:80 --name sklearn ecoden/sklearn-ml-api
+docker run -p 8000:80 gapspade/udacity-machine-learning-microservice
